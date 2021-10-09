@@ -3,42 +3,34 @@
     <br />
         <p align="center">
         <a href="">View Demo</a>
-        • 
-        <a href="">Backend</a>
     </p>
 </p>
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-![Voting App Screen Shot]()
-
-- [x] 
-
-
+- [x]
 
 ### Built With
 
-* [ReactJS](https://reactjs.org/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Redis](https://redis.io/)
-
-
+- [ReactJS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Redis](https://redis.io/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* npm
+- npm
   ```sh
   npm install npm@latest -g
   ```
-* [redis](https://redis.io/download)
-
+- [redis](https://redis.io/download)
 
 ### Installation
 
@@ -57,23 +49,24 @@ To get a local copy up and running follow these simple steps.
    REDIS_PORT=6379
    ```
 4. Run command
+
    ```sh
    npm start
    ```
 
-1. Run command for frontend in second terminal
+5. Run command for frontend in second terminal
    ```
    cd frontend
    ```
-2. Install NPM packages
+6. Install NPM packages
    ```sh
    npm install
    ```
-3. Create .env file and write
+7. Create .env file and write
    ```sh
    REACT_APP_BACKEND_ENDPOINT=http://localhost:3000
    ```
-4. Run command
+8. Run command
    ```sh
    npm start
    ```
