@@ -3,7 +3,7 @@ import { useChart } from "../../contexts/ChartContext";
 import { defaultLabelStyle } from "../../constant/constant";
 import { PieChart } from "react-minimal-pie-chart";
 import { Bar } from "react-chartjs-2";
-
+//import styles from './index.module.css'
 const Chart = () => {
   const { barData, pieData } = useChart();
 

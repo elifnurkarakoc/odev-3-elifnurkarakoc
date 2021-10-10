@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuestion } from "../../contexts/QuestionContext";
 import { useSocket } from "../../contexts/SocketContext";
-import style from "./style.module.css";
+import styles from "./index.module.css";
 
 const Button = ({ option }) => {
   const { options, setOptions } = useQuestion();
@@ -23,9 +23,9 @@ const Button = ({ option }) => {
   };
 
   return (
-    <div className={style.div}>
-      <div className={style.buttonDiv}>
-        <button className={style.button} onClick={(e) => clickVote(e, option)}>
+    <div className={styles.div}>
+      <div className={styles.buttonDiv}>
+        <button className={styles.button} onClick={(e) => clickVote(e, option)}>
           {option.text}
         </button>
       </div>

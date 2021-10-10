@@ -1,0 +1,15 @@
+.questionText {
+    @apply text-2xl font-bold mb-4;
+}
+
+.options {
+    @apply flex flex-col items-center;
+}
+
+.questionDiv{
+    @apply p-8 text-left border w-80 rounded-xl
+}
+
+.question {
+    @apply flex justify-around max-h-96 mt-10;
+}

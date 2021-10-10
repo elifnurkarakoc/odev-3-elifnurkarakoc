@@ -1,0 +1,40 @@
+.bar {
+  @apply flex mt-4;
+}
+
+.pie {
+  @apply relative 
+  items-center 
+  h-48 
+  w-48;
+}
+/* .groupChart {
+  @apply 
+  flex
+  mb-4 
+  relative 
+  
+  group;
+} */
+
+
+.transitionGroup {
+  @apply transition 
+  opacity-60 
+  absolute 
+  rounded-full 
+  -inset-0.5 
+  bg-gradient-to-r 
+  from-green-600 via-gray-400 to-green-600 
+  filter 
+  blur
+  duration-500 
+
+  group-hover:duration-200  
+  group-hover:opacity-100;
+}
+
+
+.chart {
+  @apply p-4 flex flex-col items-center;
+}

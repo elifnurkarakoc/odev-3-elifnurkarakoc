@@ -1,10 +1,11 @@
 import React from "react";
 import { useQuestion } from "../../contexts/QuestionContext";
 import SummaryCard from "../SummaryCard";
+import styles from "./index.module.css";
 const Summary = () => {
   const { options, totalCount } = useQuestion();
   return (
-    <div className="flex justify-between text-2xl font-bold p-6 ">
+    <div className={styles.card}>
       <SummaryCard text={"Total Vote"} count={totalCount} />
       {options && options.length
         ? Object.entries(options).map(([key, value]) => (
