@@ -6,7 +6,7 @@
     <h3 align="center">Voting App with ReactJS, Tailwind CSS & Redis</h3>
     <br />
         <p align="center">
-        <a href="">View Demo</a>
+        <a href="https://voting-app-react-redis.netlify.app/">View Demo</a>
     </p>
 </p>
 
