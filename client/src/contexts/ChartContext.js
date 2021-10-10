@@ -8,6 +8,7 @@ export const ChartProvider = ({ children }) => {
   const [barData, setBarData] = useState([]);
   const [pieData, setPieData] = useState([]);
   const { options } = useQuestion();
+
   useEffect(() => {
     updatePieChartData(pieData);
     updateBarChartData(barData);
@@ -24,6 +25,7 @@ export const ChartProvider = ({ children }) => {
     );
     setPieData(data);
   };
+
   const updateBarChartData = () => {
     var chart = {
       labels: [],
@@ -39,10 +41,12 @@ export const ChartProvider = ({ children }) => {
     };
     var voteData = [];
     var labels = [];
+
     Object.entries(options).map(([key, value]) => {
       labels.push(value.text);
       voteData.push(value.count);
     });
+
     chart.labels = labels;
     chart.datasets[0].data = voteData;
     setBarData(chart);

@@ -1,7 +1,5 @@
 import React from "react";
-import { useSocket } from "../contexts/SocketContext";
-import { useQuestion } from "../contexts/QuestionContext";
-import { useEffect } from "react";
+
 const Container = ({ children }) => {
 
   return (

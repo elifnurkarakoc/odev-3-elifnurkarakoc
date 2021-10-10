@@ -17,9 +17,7 @@ const Button = ({ option }) => {
       return o;
     });
     sendVote("vote", updateOptions);
-    //console.log("send");
     setOptions(updateOptions);
-    // console.log("options", { options });
   };
 
   return (

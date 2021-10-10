@@ -8,14 +8,14 @@ import { useEffect } from "react";
 const Content = () => {
   const { connectSocket, subscribeVote } = useSocket();
   const { options, setOptions } = useQuestion();
+
   useEffect(() => {
     connectSocket();
-    console.log("connect socket run");
     subscribeVote((options) => {
       setOptions(options);
     });
-    console.log("container options",options)
   }, []);
+
   return (
     <div>
       <Summary />

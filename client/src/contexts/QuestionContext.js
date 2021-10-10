@@ -18,7 +18,6 @@ export const QuestionProvider = ({ children }) => {
     );
     setTotalCount(tempCount);
     tempCount = 0;
-   // setOptions(options);
   }, [options]);
 
   const values = {

@@ -11,6 +11,7 @@ export const updateRedisVotesData = async (data) => {
   return data;
 };
 
+/*When there is no data in redis, it sends the data in the constant to the client*/
 export const getRedisVotesData = async (cb) => {
   let result = await jsonCache.get("options");
 

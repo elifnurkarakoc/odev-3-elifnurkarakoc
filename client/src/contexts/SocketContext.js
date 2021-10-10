@@ -7,42 +7,27 @@ const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
   const { options, setOptions } = useQuestion();
-  // const [socket, setSocket] = useState(
-  //   io(process.env.REACT_APP_BACKEND_ENDPOINT, {
-  //     transports: ["websocket"],
-  //   })
-  // );
-  // const socket =io(process.env.REACT_APP_BACKEND_ENDPOINT, {
-  //   transports: ["websocket"],
-  // })
-  // useEffect(() => {
-  //   connectSocket();
-  //   console.log("connect socket run");
-  //   subscribeVote((options) => {
-  //     setOptions(options);
-  //   });
-  //   console.log("container options",options)
-  // }, []);
+
   const connectSocket = (cb) => {
-    //console.log("1-connect socket function");
     socket.on("connect", (data) => {
       console.log("connect");
+      //for redis data
       initialData((data) => {
-      //  console.log("initialdata", data);
         setOptions(data);
-        //console.log("connectsocket options", options);
       });
     });
     socket.on("connect_error", () => {
       console.error("connection failed");
     });
   };
+
   const sendVote = (topic, data) => {
     if (!socket) {
       return false;
     }
     socket.emit(topic, data);
   };
+
   const subscribeVote = (cb) => {
     if (!socket) {
       return false;
@@ -51,6 +36,7 @@ export const SocketProvider = ({ children }) => {
       cb(data);
     });
   };
+
   const initialData = (cb) => {
     if (!socket) {
       return false;
@@ -59,8 +45,8 @@ export const SocketProvider = ({ children }) => {
       cb(data);
     });
   };
+
   const values = {
-    
     connectSocket,
     sendVote,
     subscribeVote,
