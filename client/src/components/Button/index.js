@@ -1,9 +1,10 @@
 import React from "react";
 import { useQuestion } from "../../contexts/QuestionContext";
 import { useSocket } from "../../contexts/SocketContext";
+import style from "./style.module.css";
 
 const Button = ({ option }) => {
-  const { options, setOptions} = useQuestion();
+  const { options, setOptions } = useQuestion();
   const { sendVote } = useSocket();
 
   const clickVote = (e, value) => {
@@ -22,12 +23,9 @@ const Button = ({ option }) => {
   };
 
   return (
-    <div className="flex justify-between text-center">
-      <div className="flex">
-        <button
-          className="border  w-56 h-12 rounded-xl bg-black hover:border-green-400 mt-4 text-xl  hover:text-green-400"
-          onClick={(e) => clickVote(e, option)}
-        >
+    <div className={style.div}>
+      <div className={style.buttonDiv}>
+        <button className={style.button} onClick={(e) => clickVote(e, option)}>
           {option.text}
         </button>
       </div>
