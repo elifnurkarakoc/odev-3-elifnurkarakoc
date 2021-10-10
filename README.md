@@ -1,26 +1,22 @@
-# :construction: IN PROGRESS 
-
-
-
 <p align="center">
-    <h3 align="center">Voting App with ReactJS, Tailwind CSS & Redis</h3>
+    <h3 align="center">Voting App with ReactJS, Socket.IO & Redis</h3>
     <br />
         <p align="center">
         <a href="https://voting-app-react-redis.netlify.app/">View Demo</a>
+         • 
+        <a href="https://votingapp.elifnurkarakoc.com/">Backend</a>
     </p>
 </p>
 
-<!-- ABOUT THE PROJECT -->
 
-## About The Project
-
-- [x]
+<hr>
 
 ### Built With
 
 - [ReactJS](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [Socket.IO](https://socket.io/)
 - [Redis](https://redis.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 <!-- GETTING STARTED -->
 
